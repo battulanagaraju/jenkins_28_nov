@@ -1,0 +1,6 @@
+def call(String gitUrl, String gitbranch){
+    checkout([
+        branches: [[name:gitbranch]],
+        userRemoteConfigs: [[url: gitUrl]]
+    ])
+}
